@@ -17,7 +17,7 @@ function getTableHeaders(obj) {
   let tableHeaders = [];
 
   Object.keys(obj).forEach(function(key) {
-    tableHeaders.push(`<td>${key}</td>`);
+    tableHeaders.push(`<th>${key}</th>`);
   });
 
   return `<tr>${tableHeaders}</tr>`;
