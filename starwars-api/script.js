@@ -39,7 +39,7 @@ function writeToDocument(url) {
     let el = document.getElementById('data');
     el.innerHTML = '';
 
-    getData(type, function(data) {
+    getData(url, function(data) {
         let pagination;
         if (data.next || data.previous) {
             pagination = generatePaginationButtons(data.next, data.previous);
